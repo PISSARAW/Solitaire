@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Solitaire</title>
+    <script src="js/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/index.js"></script>
+
+</head>
+<body>
+
+<div class="accueil">
+    <button>Jouer</button>
+</div>
+<div id="arriere-plan"></div>
+<div id="solitaire">
+    <!-- BEGIN solitaire HTML CODE -->
+    <div id="solitaire-header" class="border-box">
+        <div class="flex-div">
+            <div id="solitaire-mode"></div>
+        </div>
+        <div id="solitaire-barscore" class="flex-div">
+            <span class="item" id="solitaire-tempus"></span>
+            <div class="flex-div">
+                <span class="titre">Score</span>
+                <span class="item" id="solitaire-score"></span>
+            </div>
+
+            <div id="solitaire-barscore-coups" class="flex-div">
+                <span class="titre">Coups</span>
+                <span class="item" id="solitaire-coups">24</span>
+            </div>
+        </div>
+
+        <div class="flex-div">
+            <i id="solitaire-fermeture" class="fermer material-icons-extended"> X </i>
+        </div>
+    </div>
+
+    <div id="solitaire-barscore-barre" class="border-box">
+        <div class="button" id="solitaire-retour">
+            <i class="material-icons-extended solitaire-barscore-icons"> &#xE166; </i>
+            RETOUR
+        </div>
+        <div class="button" id="solitaire-nouvel-partie-">
+            <i class="material-icons-extended solitaire-barscore-icons"> &#xE885; </i>
+            NOUVEL PARTIE
+        </div>
+    </div>
+    <div id="solitaire-container">
+        <div id="solitaire-plateau">
+            <div class="pile dark-box" id="gauche">
+                <div class="pile" style="top: 2%;">
+                    <div class="placeholder">
+                        <img src="images/8_of_spades.png" class="carte-canvas"/>
+                    </div>
+                </div>
+                <div class="pile" style="top: 22%;">
+                    <div class="placeholder">
+                        <img src="images/8_of_spades.png" class="carte-canvas">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pile dark-box" id="droite">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="solitaire-mode-choix" class="solitaire-choix">
+        <div class="centre">
+            <div class="container" id="solitaire-mode-container">
+                <div class="baroption">
+                    <div class="option" id="solitaire-facile">
+                        <span>FACILE</span>
+                    </div>
+                    <div class="option" id="solitaire-difficile">
+                        <span>DIFFICILE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END solitaire HTML CODE -->
+
+</div>
+
+</body>
+</html>

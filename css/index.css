@@ -1,0 +1,202 @@
+
+button {
+    border: 3px solid #FFF;
+    padding: 0.6em 1.2em;
+    color: #FFF;
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 3px 2px;
+    border-radius: 2px;
+}
+
+button:hover {
+    background: #FFF;
+    color: #f65283;
+}
+#arriere-plan{
+    background: darkred;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+#solitaire-header{
+    font-size: 14px;
+    height: 56px;
+    color: white;
+    background-color: rgba(49, 49, 49, 1);
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+#solitaire-header .material-icons-extended {
+    cursor: pointer;
+    margin: 8px;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+#solitaire {
+    display: none;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    z-index: 1;
+    float: left;
+    left:15%;
+}
+
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+
+#solitaire-container {
+    background-color: #34A249;
+    position: absolute;
+    top: 56px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#solitaire-barscore{
+    cursor: default;
+    padding: 0px 16px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+}
+#solitaire-barscore #solitaire-tempus{
+    color: #ffffff;
+    text-align: center;
+    margin: 12px;
+    margin-right: 24px;
+}
+
+#solitaire-barscore .titre {
+    color: #ffffff;
+    opacity: 0.5;
+    text-align: center;
+    margin-left: 24px;
+}
+
+#solitaire-barscore .item {
+    color: #ffffff;
+    text-align: center;
+    margin: 12px;
+    margin-right: 24px;
+}
+
+.material-icons-extended {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+}
+
+#solitaire-barscore-sidebar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 56px;
+    font-size: 14px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+#solitaire-barscore-barre .button {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+#solitaire-plateau {
+    position: relative;
+    height: 100%;
+}
+
+#solitaire-plateau .pile {
+    position: absolute;
+}
+
+#solitaire-plateau .card {
+    position: absolute;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+#solitaire-plateau .dark-box {
+    background-color: rgba(43, 123, 59, 1);
+
+}
+
+ #gauche{
+    width: 15%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+#droite{
+    width: 15%;
+    height: 100%;
+    left: 85%;
+    top: 0;
+}
+
+#solitaire-plateau .carte-canvas {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 -1px 2px rgba(0,0,0,0.05);
+    width: 100%;
+    height: 100%;
+}
+
+.pile {
+    width: 38px;
+    height: 83px;
+    left: 8px;
+    top: 78px;
+}
+
+.carte {
+    width: 38px;
+    height: 52px;
+    left: 8px;
+    top: 16px;
+    transition: left 500ms, top 500ms;
+    z-index: 1;
+    position: absolute;
+}
+
+.solitaire-choix{
+    background-color: blueviolet;
+    z-index: 1;
+    position: absolute;
+    left: 15%;
+    height: 30%;
+    width: 70%;
+    display: none;
+}
+.baroption{
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+.option{
+    margin-left: 50%;
+    cursor: hand;
+}
